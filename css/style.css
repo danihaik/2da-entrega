@@ -25,7 +25,7 @@ body {
     border-radius: 0%;
 }
 
-.bodyindex {
+.body_index {
     background-color: #bcc1b7;
     flex-direction: column;
     justify-content: space-between;
@@ -33,49 +33,46 @@ body {
    }
 
 
-
-
-nav h1{
-font-family: 'louis';
-font-size: 60px;
-padding: 20px 0 0 10px;
-color: #4c4c45;
-margin-left: 2%;
+.container-fluid {
+    background-color: #eae7e4;
     
-       }
-
-nav ul {
-list-style-type: none;
-
-
-   }
-
-nav ul li{
-    display: inline-block;
-       
-    }
     
-.botones{
+}
 
+.navbar-brand {
+    font-family: 'louis';
+    font-size: 60px;
+    color: #4c4c45;
+}
+.navbar_brand_nosotros {
+    font-family: 'louis';
+    font-size: 60px;
+    color: #4c4c45;
+    text-decoration: none;
+}
+
+.nav-item {
     color: #4c4c45;
     font-family: 'caviar';
-    margin: auto;
-    
+   text-decoration-line: underline;
+   padding: 0 10px;
 
 }
 
-
-.botones li a {
+.offcanvas-title {
+    font-family: 'louis';
+    font-size: 60px;
     color: #4c4c45;
-    padding: 0 10px;
-    text-align: center;
+
+}
+
+.offcanvas {
+    background-color: #eae7e4;
 }
 
 
-   
-      
 
-.tituloindex {
+.titulo_index {
     font-family: 'caviar';
     color: white;
     display: flex;
@@ -89,7 +86,7 @@ nav ul li{
 
 }
 
-.tituloindex_2 {
+.titulo_index_2 {
     font-family: 'caviar';
     color: #806b89;
     font-size: 75px;
@@ -101,7 +98,7 @@ nav ul li{
     margin-left: 2%;
  
 }
-.imagenesindex {
+.imagenes_index {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -125,7 +122,7 @@ nav ul li{
             width: auto;
             max-height: 49vh;
         }
-        .invitacionindex {
+        .invitacion_index {
             display: flex;
             justify-content: center;
             text-align: center;
@@ -148,9 +145,6 @@ nav ul li{
         
 footer a {
     color: #000;
-
-    
-    
 }
 
 footer {
@@ -158,7 +152,7 @@ footer {
           
      }
 
-     .footerindex {
+     .footer_index {
         background-color: #eae7e4;
      }
      footer .botones {
@@ -174,15 +168,8 @@ footer {
   
 
 @media (max-width: 320px) {
-    nav h1{
-        font-family: 'louis';
-        font-size: 30px;
-        padding: 20px 0 0 10px;
-        color: #4c4c45;
-        margin-left: 6px;
-            
-               }
-    .tituloindex {
+
+    .titulo_index {
                 font-family: 'caviar';
                 color: white;
                 display: flex;
@@ -197,7 +184,7 @@ footer {
             
             }
 
-    .tituloindex_2 {
+    .titulo_index_2 {
         font-family: 'caviar';
         color: #806b89;
         font-size: 15px;
@@ -215,19 +202,9 @@ footer {
 .text-right{
     text-align: left;
 }
-.botones li a{
-    font-size: 8px;
-   
-    
-}
 
-header .botones {
-    display: flex;
-    text-align: right;
-    align-items: right;
-    justify-content: right;
-     flex-direction: column;
-}
+
+
 
 .main {
     display: flex;
@@ -239,7 +216,7 @@ header .botones {
     height: 100%;
    
 }
-.imagenesindex {
+.imagenes_index {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 8px;
@@ -247,7 +224,7 @@ header .botones {
     padding: 0%;
    
 }
-.fotosindex {
+.fotos_index {
     margin: 0%;
     padding: 0%;
 }
@@ -272,7 +249,7 @@ footer .botones {
     
 }
 
-.footerindex {
+.footer_index {
     display: flex;
     -ms-flex-direction: column;
     
@@ -285,9 +262,9 @@ footer .botones {
     
     
 
-/* SOBRE NOSOTROS */
+/* NOSOTROS */
 
-.bodypages {
+.body_pages {
     background-color: #eae7e4;
 }
 
@@ -296,96 +273,84 @@ footer .botones {
 }
 
 
-.nav_bar_principal {
-    display: flex; 
-}  
-.nav_bar_principal h1 {
-    margin: 0;
-}
-.titulopages{
-    font-family: 'louis';
-    font-size: 60px;
-    padding: 6px 0 0 10px;
-    color: #4c4c45;
-    text-decoration: none;
-       
-           }
-
 /* PORTAFOLIO  */
 
 
-.botonesportafolio {
-    color: black;
-    font-family: 'caviar';
-    margin: auto;}
+.botones_portafolio {
+    color: #4c4c45;
+    font-family: 'caviarbold';
+    margin: auto;
+    
+}
 
-.imagenesportafolio {
+.imagenes_portafolio {
     display: flex;
     margin: auto;
 
     
 }
 
-.imagenesportafolio div {
+.imagenes_portafolio div {
     max-width: 100%;
     padding: 10px;
     padding-top: 50px;
     
 }
-.imagenesportafolio div img {
+.imagenes_portafolio div img {
     max-width: 100%;
     padding-top: 20px;
     padding-bottom: 60px;
 }
-.mainportafolio {
+.main_portafolio {
     margin-top: 75px;
     margin-bottom: 40px;
 }
 /* NOSOTROS */
-.parrafonosotros {
+.parrafo_nosotros {
     margin: auto; 
     font-family: 'caviar';
     font-size: 18pt;
     margin-top: 100px;
     margin-left: 5px;
+    color: #4c4c45;
     
 }
-.parrafonosotros p {
+.parrafo_nosotros p {
     margin-left: 10px;
     
 }
-.nosotrostexto2{
+.nosotros_texto_2{
     text-align: right;
 
 }
 
-.fundadoraydirectora {
+.fundadora_y_directora {
     font-family: 'caviarbold';
     font-size: 20pt;
     margin-right: 155px;
-    margin-left: 909px;
+    margin-left: 1100px;
     margin-top: 50px;
     margin-bottom: -50px;
-    color: #000;
+    color: #4c4c45;
   
 }
 
-#imagendani {
+#imagen_dani {
     max-width: 100%;
     padding-top: 20px;
     padding-bottom: 60px;
     margin-left: 3%;
 
 }
-.imagentexto {
+.imagen_texto {
     display: flex;
     
 }
-.imagentexto div {
+.imagen_texto div {
     width: 50%
 }
 
-.imagentexto div p {
+.imagen_texto div p {
     margin: auto; 
     font-family: 'caviar';
     font-size: 17pt;
@@ -395,89 +360,110 @@ footer .botones {
     
 }
 
-.quehacemos {
+.que_hacemos {
     display: flex;
     margin: auto; 
     font-family: 'caviar';
-    font-size: 18pt;
+    font-size: 15pt;
     margin-top: -30px;
     margin-left: 3%;
+    color: #4c4c45;
+    flex-direction: column;
     
 
 }
-.comolohacemos a {
+.que_hacemos h3{
+    font-family: 'caviarbold';
+}
+
+.como_lo_hacemos a {
     display: flex;
     margin: 50px 0 50px 0;
-    font-style: 'caviarbold';
+    font-family: 'caviarbold';
     margin-left: 3%;
+    font-size: 15pt;
+    text-decoration: none;
+    color: #4c4c45;
     
 }
 
 /* SERVICIOS */
 
-.parrafoservicios h2{
+.parrafo_servicios h2{
     font-size: 22px;
-    color: #000;
+    color: #4c4c45;
     margin-left: 0%;
+    font-family: 'caviarbold';
+   
 
 }
-.parrafoservicios h3 {
+.parrafo_servicios h3 {
     font-size: 22px;
-    color: #000;
+    color: #4c4c45;
     margin-left: 0%;
+    font-family: 'caviarbold';
+}
+.parrafo_servicios h4 {
+    font-size: 22px;
+    color: #4c4c45;
+    margin-left: 0%;
+    font-family: 'caviarbold';
 }
 
-.parrafoservicios {
+.parrafo_servicios {
     display: flex;
     font-family: 'caviar';
     font-size: 15pt;
     margin: 50px 10px 50px 10px;
+    justify-content: center;
+    flex-direction: column;
     
 }
 
-.imagenservicios {
-    display: inline-block;
-    margin-bottom: 50px;
-    margin-left: 1%;
-}
 
 .carousel {
     width: 50%;
     height: 50%;
    
 }
-
+.contenedor_carousel {
+    display: flex;
+    justify-content: center;
+}
 
 /* CONTACTO */
 
-.textocontacto {
-    display: flex
 
-}
-.textocontacto main p{
+.text_contact {
     display: flex;
-    position: relative;
-
+    font-family: 'caviar';
+    font-size: 15pt;
+    margin: 50px 10px 50px 10px;
+    
+    
 }
-.text-contact {
+
+.text_contact {
     text-align: cleft;
-    margin-top: -8%;
+    margin-top: -3%;
     margin-left: 7%;
 }
 .formulario {
     text-align: right;
     margin-right: 8%;
+    font-family: 'caviar';
+    font-size: 15pt;
     
 }
 
-.maincontact {
+.main_contact {
     display: flex;
     align-items: center;
-    padding-bottom: 65px;
-    padding-top: 125px;
+    padding-bottom: 145px;
+    padding-top: 155px;
     
  }
- .maincontact div {
+ .main_contact div {
     top: 50%;
     width: 105%;
     margin-bottom: 20px;
@@ -493,12 +479,14 @@ input{
 .mensaje {
     height: 150px;
 }
-.footercontacto {
+.footer_contacto {
     margin-bottom: 0%;
+
 }
+
 @media (max-width: 320px) {
 
-    .titulopages{
+    .titulo_pages{
         font-family: 'louis';
         font-size: 30px;
         padding: 8px 0 0 5px;
@@ -507,12 +495,12 @@ input{
            
                }
 
-    .maincontact {
+    .main_contact {
         display: flex;
         flex-direction: column;
     }
         
-    .text-contact {
+    .text_contact {
         text-align: cleft;
         margin-top: -36%;
         margin-left: 7%;
